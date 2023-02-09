@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,regular,,600,700,900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,regular,,600,700,900&display=swap);
 
-@import url("https://fonts.googleapis.com/css?family=Taviraj:300,regular,500,600,700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Taviraj:300,regular,500,600,700&display=swap);
+
+@charset "UTF-8";
 
 @font-face {
   font-family: icons;
@@ -641,6 +643,10 @@ svg path {
   font-weight: 600;
 }
 
+.page__hero {
+  padding-top: 75px;
+}
+
 .hero__background {
   height: 650px;
   position: relative;
@@ -717,6 +723,7 @@ svg path {
   position: relative;
   z-index: 3;
   font-weight: 200;
+  padding-top: 10px;
   margin-bottom: 0.625rem;
   line-height: 1.4;
 }
@@ -1197,10 +1204,6 @@ svg path {
     padding-bottom: 2.1875rem;
   }
 
-  .page__hero {
-    padding-top: 4.6875rem;
-  }
-
   .hero__background {
     height: 40.625rem;
   }
@@ -1329,12 +1332,6 @@ svg path {
   }
 }
 
-@media (max-width: 620px) {
-  .about__card {
-    width: 98%;
-  }
-}
-
 @media (max-width: 20em) {
   .page__main-slider {
     margin-bottom: 3.125rem;
@@ -1358,10 +1355,6 @@ svg path {
 
   .footer__container {
     padding-bottom: 1.875rem;
-  }
-
-  .page__hero {
-    padding-top: 4.6875rem;
   }
 
   .hero__background {
@@ -1702,6 +1695,12 @@ svg path {
   }
 }
 
+@media (max-width: 38.75em) {
+  .about__card {
+    width: 98%;
+  }
+}
+
 @media (max-width: 37.5em) {
   .footer__blocks {
     -ms-grid-columns: auto;
@@ -1795,18 +1794,6 @@ svg path {
 @supports not (padding-bottom: clamp( 1.875rem , 1.7613636364rem  +  0.5681818182vw , 2.1875rem )) {
     .footer__container {
       padding-bottom: calc(1.875rem + 0.3125 * (100vw - 20rem) / 55);
-    }
-}
-
-@supports (padding-top: clamp( 4.6875rem , 4.6875rem  +  0vw , 4.6875rem )) {
-    .page__hero {
-      padding-top: clamp( 4.6875rem , 4.6875rem  +  0vw , 4.6875rem );
-    }
-}
-
-@supports not (padding-top: clamp( 4.6875rem , 4.6875rem  +  0vw , 4.6875rem )) {
-    .page__hero {
-      padding-top: calc(4.6875rem + 0 * (100vw - 20rem) / 55);
     }
 }
 
