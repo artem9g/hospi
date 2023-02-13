@@ -2212,7 +2212,7 @@ svg path {
 
 @media (max-width: 518px) and (min-width: 75em) {
   .hero__texts::before {
-    top: -31.25rem;
+    top: -43.75rem;
   }
 
   .hero__texts::before {
@@ -2221,15 +2221,15 @@ svg path {
 }
 
 @media (max-width: 518px) and (min-width: 20em) and (max-width: 75em) {
-@supports (top: clamp( -31.25rem , 4.5454545455rem  +  -47.7272727273vw , -5rem )) {
+@supports (top: clamp( -43.75rem , 9.0909090909rem  +  -70.4545454545vw , -5rem )) {
     .hero__texts::before {
-      top: clamp( -31.25rem , 4.5454545455rem  +  -47.7272727273vw , -5rem );
+      top: clamp( -43.75rem , 9.0909090909rem  +  -70.4545454545vw , -5rem );
     }
 }
 
-@supports not (top: clamp( -31.25rem , 4.5454545455rem  +  -47.7272727273vw , -5rem )) {
+@supports not (top: clamp( -43.75rem , 9.0909090909rem  +  -70.4545454545vw , -5rem )) {
     .hero__texts::before {
-      top: calc(-5rem + -26.25 * (100vw - 20rem) / 55);
+      top: calc(-5rem + -38.75 * (100vw - 20rem) / 55);
     }
 }
 
