@@ -439,8 +439,8 @@ svg path {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .header__logo {
@@ -449,7 +449,10 @@ svg path {
 }
 
 .header__logo img {
-  max-height: 3.4375rem;
+  position: absolute;
+  top: -37px;
+  left: 0;
+  height: 4.5625rem;
   max-width: 11.125rem;
 }
 
@@ -611,7 +614,7 @@ svg path {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-column-gap: 0.625rem;
-     -moz-column-gap: 0.625rem;
+    -moz-column-gap: 0.625rem;
           column-gap: 0.625rem;
   row-gap: 0.5rem;
 }
@@ -1561,6 +1564,12 @@ svg path {
 @media (max-width: 47.99875em) {
   .section-title {
     text-align: center;
+  }
+
+  .header__logo img {
+    top: -28.5px;
+    left: 0;
+    height: 3.5625rem;
   }
 
   .menu__body {
