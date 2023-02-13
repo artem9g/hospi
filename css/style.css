@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,regular,,600,700,900&display=swap);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,regular,,600,700,900&display=swap");
 
-@import url(https://fonts.googleapis.com/css?family=Taviraj:300,regular,500,600,700&display=swap);
+@import url("https://fonts.googleapis.com/css?family=Taviraj:300,regular,500,600,700&display=swap");
 
 @charset "UTF-8";
 
@@ -1358,13 +1358,6 @@ svg path {
   }
 }
 
-@media (max-width: 350px) {
-  .hero__texts::before {
-    left: -3.125rem;
-    top: -5rem;
-  }
-}
-
 @media (max-width: 20em) {
   .page__main-slider {
     margin-bottom: 3.125rem;
@@ -1798,6 +1791,13 @@ svg path {
   .about::after {
     top: 520px;
     right: 10px;
+  }
+}
+
+@media (max-width: 21.875em) {
+  .hero__texts::before {
+    left: -3.125rem;
+    top: -5rem;
   }
 }
 
