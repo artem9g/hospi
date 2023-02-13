@@ -614,7 +614,7 @@ svg path {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-column-gap: 0.625rem;
-    -moz-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
           column-gap: 0.625rem;
   row-gap: 0.5rem;
 }
@@ -1351,6 +1351,28 @@ svg path {
   }
 }
 
+@media (max-width: 518px) {
+  .hero__texts::before {
+    background-size: cover;
+    height: 180%;
+    width: 140%;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0.94;
+  }
+}
+
+@media (max-width: 518px) and (max-width: 20em) {
+  .hero__texts::before {
+    top: -5rem;
+  }
+
+  .hero__texts::before {
+    left: -3.125rem;
+  }
+}
+
 @media (max-width: 20em) {
   .page__main-slider {
     margin-bottom: 3.125rem;
@@ -1385,11 +1407,11 @@ svg path {
   }
 
   .hero__title {
-    font-size: 2.5rem;
+    font-size: 3.0625rem;
   }
 
   .hero__text {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   .hero__tel {
@@ -1762,16 +1784,6 @@ svg path {
     padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
   }
 
-  .hero__texts::before {
-    background-size: cover;
-    height: 180%;
-    width: 140%;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-    opacity: 0.94;
-  }
-
   .four-services__card {
     width: 98%;
   }
@@ -1779,16 +1791,6 @@ svg path {
   .about::after {
     top: 520px;
     right: 10px;
-  }
-}
-
-@media (max-width: 29.99875em) and (max-width: 20em) {
-  .hero__texts::before {
-    top: -5rem;
-  }
-
-  .hero__texts::before {
-    left: -3.125rem;
   }
 }
 
@@ -1889,27 +1891,27 @@ svg path {
     }
 }
 
-@supports (font-size: clamp( 2.5rem , 2.2727272727rem  +  1.1363636364vw , 3.125rem )) {
+@supports (font-size: clamp( 3.0625rem , 3.0397727273rem  +  0.1136363636vw , 3.125rem )) {
     .hero__title {
-      font-size: clamp( 2.5rem , 2.2727272727rem  +  1.1363636364vw , 3.125rem );
+      font-size: clamp( 3.0625rem , 3.0397727273rem  +  0.1136363636vw , 3.125rem );
     }
 }
 
-@supports not (font-size: clamp( 2.5rem , 2.2727272727rem  +  1.1363636364vw , 3.125rem )) {
+@supports not (font-size: clamp( 3.0625rem , 3.0397727273rem  +  0.1136363636vw , 3.125rem )) {
     .hero__title {
-      font-size: calc(2.5rem + 0.625 * (100vw - 20rem) / 55);
+      font-size: calc(3.0625rem + 0.0625 * (100vw - 20rem) / 55);
     }
 }
 
-@supports (font-size: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem )) {
+@supports (font-size: clamp( 1.125rem , 0.9886363636rem  +  0.6818181818vw , 1.5rem )) {
     .hero__text {
-      font-size: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem );
+      font-size: clamp( 1.125rem , 0.9886363636rem  +  0.6818181818vw , 1.5rem );
     }
 }
 
-@supports not (font-size: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem )) {
+@supports not (font-size: clamp( 1.125rem , 0.9886363636rem  +  0.6818181818vw , 1.5rem )) {
     .hero__text {
-      font-size: calc(1rem + 0.5 * (100vw - 20rem) / 55);
+      font-size: calc(1.125rem + 0.375 * (100vw - 20rem) / 55);
     }
 }
 
@@ -2208,7 +2210,7 @@ svg path {
 }
 }
 
-@media (max-width: 29.99875em) and (min-width: 75em) {
+@media (max-width: 518px) and (min-width: 75em) {
   .hero__texts::before {
     top: -31.25rem;
   }
@@ -2218,7 +2220,7 @@ svg path {
   }
 }
 
-@media (max-width: 29.99875em) and (min-width: 20em) and (max-width: 75em) {
+@media (max-width: 518px) and (min-width: 20em) and (max-width: 75em) {
 @supports (top: clamp( -31.25rem , 4.5454545455rem  +  -47.7272727273vw , -5rem )) {
     .hero__texts::before {
       top: clamp( -31.25rem , 4.5454545455rem  +  -47.7272727273vw , -5rem );
