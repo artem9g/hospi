@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,regular,,600,700,900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,regular,,600,700,900&display=swap);
 
-@import url("https://fonts.googleapis.com/css?family=Taviraj:300,regular,500,600,700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Taviraj:300,regular,500,600,700&display=swap);
 
 @charset "UTF-8";
 
@@ -1351,22 +1351,7 @@ svg path {
   }
 }
 
-@media (max-width: 518px) {
-  .hero__texts::before {
-    background-image: url("../img/bg.svg");
-    background-size: contain;
-    width: 700px;
-    height: 700px;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-    top: -6.25rem;
-    left: 0.625rem;
-    opacity: 0.92;
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 30em) {
   .hero__texts::before {
     left: -2.5rem;
     top: -6.25rem;
@@ -1773,6 +1758,21 @@ svg path {
   .footer__blocks {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 32.375em) {
+  .hero__texts::before {
+    background-image: url("../img/bg.svg");
+    background-size: contain;
+    width: 700px;
+    height: 700px;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -6.25rem;
+    left: 0.625rem;
+    opacity: 0.92;
   }
 }
 
