@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,regular,,600,700,900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,regular,,600,700,900&display=swap);
 
-@import url("https://fonts.googleapis.com/css?family=Taviraj:300,regular,500,600,700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Taviraj:300,regular,500,600,700&display=swap);
 
 @charset "UTF-8";
 
@@ -1351,13 +1351,6 @@ svg path {
   }
 }
 
-@media (max-width: 30em) {
-  .hero__texts::before {
-    left: -2.5rem;
-    top: -6.25rem;
-  }
-}
-
 @media (max-width: 20em) {
   .page__main-slider {
     margin-bottom: 3.125rem;
@@ -1725,19 +1718,21 @@ svg path {
   .menu__body::before {
     min-height: 4.375rem;
   }
-
-  .hero__texts::before {
-    top: -9.375rem;
-  }
-
-  .hero__texts::before {
-    left: 8.125rem;
-  }
 }
 
 @media (max-width: 47.99875em) and (any-hover: none) {
   .icon-menu {
     cursor: default;
+  }
+}
+
+@media (max-width: 47.99875em) and (max-width: 32.375em) {
+  .hero__texts::before {
+    top: -10.9375rem;
+  }
+
+  .hero__texts::before {
+    left: 7.5rem;
   }
 }
 
@@ -1758,14 +1753,23 @@ svg path {
   .hero__texts::before {
     background-image: url("../img/bg.svg");
     background-size: contain;
-    width: 700px;
-    height: 700px;
+    width: 45.625rem;
+    height: 45.625rem;
     -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
             transform: rotate(0deg);
-    top: -6.25rem;
-    left: 0.625rem;
-    opacity: 0.92;
+    left: 0;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 32.375em) and (max-width: 19.375em) {
+  .hero__texts::before {
+    top: -5.625rem;
+  }
+
+  .hero__texts::before {
+    left: -6.25rem;
   }
 }
 
@@ -1791,13 +1795,6 @@ svg path {
   .about::after {
     top: 520px;
     right: 10px;
-  }
-}
-
-@media (max-width: 21.875em) {
-  .hero__texts::before {
-    left: -3.125rem;
-    top: -5rem;
   }
 }
 
@@ -2121,14 +2118,6 @@ svg path {
   .menu__body::before {
     min-height: 6.625rem;
   }
-
-  .hero__texts::before {
-    top: -17.5rem;
-  }
-
-  .hero__texts::before {
-    left: 0.0000000625rem;
-  }
 }
 
 @media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 75em) {
@@ -2141,30 +2130,6 @@ svg path {
 @supports not (min-height: clamp( 4.375rem , 3.5568181818rem  +  4.0909090909vw , 6.625rem )) {
     .menu__body::before {
       min-height: calc(4.375rem + 2.25 * (100vw - 20rem) / 55);
-    }
-}
-
-@supports (top: clamp( -17.5rem , -6.4204545455rem  +  -14.7727272727vw , -9.375rem )) {
-    .hero__texts::before {
-      top: clamp( -17.5rem , -6.4204545455rem  +  -14.7727272727vw , -9.375rem );
-    }
-}
-
-@supports not (top: clamp( -17.5rem , -6.4204545455rem  +  -14.7727272727vw , -9.375rem )) {
-    .hero__texts::before {
-      top: calc(-9.375rem + -8.125 * (100vw - 20rem) / 55);
-    }
-}
-
-@supports (left: clamp( 0.0000000625rem , 11.0795454318rem  +  -14.7727271591vw , 8.125rem )) {
-    .hero__texts::before {
-      left: clamp( 0.0000000625rem , 11.0795454318rem  +  -14.7727271591vw , 8.125rem );
-    }
-}
-
-@supports not (left: clamp( 0.0000000625rem , 11.0795454318rem  +  -14.7727271591vw , 8.125rem )) {
-    .hero__texts::before {
-      left: calc(8.125rem + -8.1249999375 * (100vw - 20rem) / 55);
     }
 }
 }
@@ -2213,6 +2178,78 @@ svg path {
 @supports not (width: clamp( 40.625rem , 38.8980263158rem  +  3.9473684211vw , 50rem )) {
     .hero__block {
       width: calc(40.625rem + 9.375 * (100vw - 43.75rem) / 237.5);
+    }
+}
+}
+
+@media (max-width: 47.99875em) and (min-width: 48em) {
+  .hero__texts::before {
+    top: -13.75rem;
+  }
+
+  .hero__texts::before {
+    left: 5.3125rem;
+  }
+}
+
+@media (max-width: 47.99875em) and (min-width: 32.375em) and (max-width: 48em) {
+@supports (top: clamp( -13.75rem , -5.11rem  +  -18vw , -10.9375rem )) {
+    .hero__texts::before {
+      top: clamp( -13.75rem , -5.11rem  +  -18vw , -10.9375rem );
+    }
+}
+
+@supports not (top: clamp( -13.75rem , -5.11rem  +  -18vw , -10.9375rem )) {
+    .hero__texts::before {
+      top: calc(-10.9375rem + -2.8125 * (100vw - 32.375rem) / 15.625);
+    }
+}
+
+@supports (left: clamp( 5.3125rem , 12.0325rem  +  -14vw , 7.5rem )) {
+    .hero__texts::before {
+      left: clamp( 5.3125rem , 12.0325rem  +  -14vw , 7.5rem );
+    }
+}
+
+@supports not (left: clamp( 5.3125rem , 12.0325rem  +  -14vw , 7.5rem )) {
+    .hero__texts::before {
+      left: calc(7.5rem + -2.1875 * (100vw - 32.375rem) / 15.625);
+    }
+}
+}
+
+@media (max-width: 32.375em) and (min-width: 32.375em) {
+  .hero__texts::before {
+    top: -6.25rem;
+  }
+
+  .hero__texts::before {
+    left: 0.0000000625rem;
+  }
+}
+
+@media (max-width: 32.375em) and (min-width: 19.375em) and (max-width: 32.375em) {
+@supports (top: clamp( -6.25rem , -4.6935096154rem  +  -4.8076923077vw , -5.625rem )) {
+    .hero__texts::before {
+      top: clamp( -6.25rem , -4.6935096154rem  +  -4.8076923077vw , -5.625rem );
+    }
+}
+
+@supports not (top: clamp( -6.25rem , -4.6935096154rem  +  -4.8076923077vw , -5.625rem )) {
+    .hero__texts::before {
+      top: calc(-5.625rem + -0.625 * (100vw - 19.375rem) / 13);
+    }
+}
+
+@supports (left: clamp( -6.25rem , -15.5649039393rem  +  48.0769235577vw , 0.0000000625rem )) {
+    .hero__texts::before {
+      left: clamp( -6.25rem , -15.5649039393rem  +  48.0769235577vw , 0.0000000625rem );
+    }
+}
+
+@supports not (left: clamp( -6.25rem , -15.5649039393rem  +  48.0769235577vw , 0.0000000625rem )) {
+    .hero__texts::before {
+      left: calc(-6.25rem + 6.2500000625 * (100vw - 19.375rem) / 13);
     }
 }
 }
